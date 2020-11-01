@@ -1,0 +1,423 @@
+body {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(10, 10, 10);
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+
+
+.doorgrid{
+	width:  70%;
+	height: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	transition-property: all;
+transition-duration: 1s;
+
+}
+
+.doorgrid.nosee
+{
+opacity: 0;
+
+transition-property: all;
+transition-duration: 1s;
+
+}
+
+.door1{
+	width: 190px;
+	height: 100%;
+	background-color: #fbdf74;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+	z-index: 1;
+
+	transform-origin: left;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.door2{
+	width: 190px;
+	height: 100%;
+	background-color: #d3c1e0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	transform-origin: left;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.door3{
+	width: 190px;
+	height: 100%;
+	background-color:  #fae9f1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	transform-origin: left;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.door4{
+	width: 190px;
+	height: 100%;
+	background-color: #a2e281;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	transform-origin: left;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.door5{
+	width: 190px;
+	height: 100%;
+	background-color: #57d6dd;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	transform-origin: left;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.door6{
+	width: 190px;
+	height: 100%;
+	background-color: #eb6296;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	transform-origin: left;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.door7{
+	width: 190px;
+	height: 100%;
+	background-color: #ffba07;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	transform-origin: left;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.door8{
+	width: 190px;
+	height: 100%;
+	background-color:#9fc2e8;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	transform-origin: left;
+
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+
+.door1.active{
+	  transform: perspective(1200px)
+	  translateZ(0px)
+	  translateX(0px)
+	  translateY(0px)
+	  rotateY(-105deg);
+}
+
+.door2.active{
+	transform: perspective(1200px)
+	translateZ(0px)
+	translateX(0px)
+	translateY(0px)
+	rotateY(-105deg);
+}
+
+.door3.active{
+	transform: perspective(1200px)
+	translateZ(0px)
+	translateX(0px)
+	translateY(0px)
+	rotateY(-105deg);
+}
+
+.door4.active{
+	transform: perspective(1200px)
+	translateZ(0px)
+	translateX(0px)
+	translateY(0px)
+	rotateY(-105deg);
+}
+
+.door5.active{
+	transform: perspective(1200px)
+	translateZ(0px)
+	translateX(0px)
+	translateY(0px)
+	rotateY(-105deg);
+}
+
+.door6.active{
+	transform: perspective(1200px)
+	translateZ(0px)
+	translateX(0px)
+	translateY(0px)
+	rotateY(-105deg);
+}
+
+.door7.active{
+	transform: perspective(1200px)
+	translateZ(0px)
+	translateX(0px)
+	translateY(0px)
+	rotateY(-105deg);
+}
+
+.door8.active{
+	transform: perspective(1200px)
+	translateZ(0px)
+	translateX(0px)
+	translateY(0px)
+	rotateY(-105deg);
+}
+
+.backdoor
+{
+  background-color: black;
+  position:relative;
+  width:190px;
+  height:100%;
+}
+
+.monster
+{
+	width: 0px;
+	height:0px%;
+	position:absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+	bottom: 0;
+	
+}
+
+.monster.see
+{
+	width: 200px;
+	height:100%;
+	position:absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+	bottom: 0;
+}
+
+.monster2
+{
+	width: 0%;
+	height: 0%;
+	position:absolute;
+}
+
+.monster2.see
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+}
+
+.monster3
+{
+	width: 0%;
+	height: 0%;
+	position:absolute;
+}
+
+.monster3.see
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+}
+
+.baby
+{
+	width: 0%;
+	height: 0%;
+	position:absolute;
+}
+
+.baby.see
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+}
+
+.logo
+{
+	width: 180px;
+	height: 25px;
+	position: absolute;
+	bottom: 27px;
+	right: 30px;
+}
+
+.logo2
+{
+	width: 190px;
+	height: 30px;
+	position: absolute;
+	bottom: 27px;
+	left: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.logoMain
+{
+	width: 1000px;
+	height: 30px;
+	position: fixed;
+	display: flex;
+	align-items: center;
+}
+
+.logoMain.nosee
+{ width: 0%;
+height: 0%;
+}
+
+/*
+HTML - 태그로 구성되어 있는 골격
+CSS - 골격에다가 옷을 입히는 것
+Javascript(Jquery) - HTML, CSS 요소 컨트롤 [액션, 애니메이션 포함 스타일]
+
+/*
+position: relative; - 상대값
+position: absolute; - 절대값
+position: fixed; - 고정
+*/
+
+/*
+margin - 외부간격
+padding - 내부간격
+*/
+
+/* flex
+기본 설정으로 좌`측에서 우측으로 아이템 정렬[Flex가 적용된 div 안에 적용]
+기본 설정으로 한 줄에 아이템이 다 들어가며, 동등한 비율로 영역 차지
+flex-direction: column으로 진행방향 변경 가능[상-하 정렬]
+*/
+
+/* Align-items[세로 정렬]
+center: 가운데 정렬
+flex-start: 상단 정렬
+flex-end: 하단 정렬 
+
+justify-content[가로 정렬]
+space-between: 대지 기준 세로 가운데 정렬
+center: 세로 가운데 / 가로 가운데 정렬
+space-around: 일정한 공간 배분
+
+/* CSS transition
+transition-property : transition을 적용시킬 속성을 정합니다. 
+	all: 모두 적용;
+transition-timing-function : transition의 진행 속도를 정합니다. 
+transition-duration : transition의 총 시간을 정합니다.
+transition-delay : transition의 시직을 연기합니다.
+*/
+
+/* Animation
+animation-name
+animation-duration: 1 사이클의 애니메이션이 얼마에 걸쳐 일어날 지 지정
+animation-delay: 엘리먼트가 로드되고 나서 언제 애니메이션을 시작할지 지정
+animation-direction: 애니메이션이 종료되고 다시 처음부터 역방향으로 진행할 지 지정
+animation-iteration-count: 애니메이션이 몇 번 반복될 지 지정.
+	infinite: 계속 반복
+animation-play-state: 애니메이션을 멈추거나 다시 시작
+	paused: 멈춤
+	running: 재생
+animation-timing-function: 중간 상태들의 전환을 어떤 시간 간격으로 진행할 지 지정
+	ease-in: 점점 빠르게
+	ease-out: 점점 느리게
+	ease-in-out: 느렸다가 빠르게
+	linear: 등속운동
+animation-fill-mode: 시작되기 전이나 끝나고 난 후 어떤 값으로 적용될지 지정합니다.
+	forwards;
+*/
+
+/* Css Transform 
+
+transform:scaleX(x축 비율);          // x축으로 확대, 축소
+transform:scaleY(y축 비율);          // y축으로 확대, 축소
+transform:scale(x축 비율, y축 비율);  // x축, y축으로 확대, 축소
+ 
+transform:rotateX(Ndeg);  // x축 기준으로 N도 만큼 회전
+transform:rotateY(Ndeg);  // y축 기준으로 N도 만큼 회전
+transform:rotate(Ndeg);   // N도 만큼 회전
+ 
+transform:translateX(10px);        // X축으로 10px 이동
+transform:translateY(10px);        // Y축으로 10px 이동
+transform:translate(-10px, -10px); // X축으로 -10px, Y축으로 -10px 이동
+ 
+transform:skewX(Ndeg);             // x축으로 N도 만큼 기울이기
+transform:skewY(Ndeg);             // y축으로 N도 만큼 기울이기
+transform:skew(x축 Ndeg, y축 Ndeg); // x축, y축으로 N도 만큼 기울이기
+ 
+transform-origin:x축 y축;  // px, 백분율(%), left, center, right 중에서 사용할 수 있습니다.
+*/
